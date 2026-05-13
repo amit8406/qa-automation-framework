@@ -15,7 +15,7 @@ public class LoginSteps {
 
 	@When("user entered the valid uname and pass")
 	public void user_entered_the_valid_uname_and_pass() {
-	    // Write code here that turns the phrase above into concrete actions
+	    System.out.println("Uesr and pass is entered");
 	    throw new io.cucumber.java.PendingException();
 	}
 
