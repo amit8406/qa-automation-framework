@@ -10,8 +10,7 @@ public class LoginSteps {
 	
 	@Given("user present on login page")
 	public void user_present_on_login_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    System.out.println("On Login page");
 	}
 
 	@When("user entered the valid uname and pass")
