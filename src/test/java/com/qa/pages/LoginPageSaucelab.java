@@ -3,13 +3,16 @@ package com.qa.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 public class LoginPageSaucelab {
 	
 	WebDriver driver;
 	
+	
 	By username = By.id("user-name");
 	By password = By.id("password");
 	By btnLogin = By.xpath("//input[@id='login-button']");
+	By loginText = By.xpath("//div[contains(text(),'Swag Labs')]");
 	
 	public LoginPageSaucelab(WebDriver driver)
 	{
@@ -25,9 +28,22 @@ public class LoginPageSaucelab {
 	{
 		driver.findElement(password).sendKeys(pass);
 	}
-	 public void loginBtnClick()
-	 {
-		 driver.findElement(btnLogin).click();
-	 }
+	public void loginBtnClick()
+	{
+		
+		driver.findElement(btnLogin).click();
+	}
+	public void loginPageText()
+	{
+		String b = driver.findElement(loginText).getText();
+		if(b=="Swag Labs")
+		{
+			System.out.println("The text matched returned to Login Page");
+		}
+		else
+		{
+			System.out.println("Failed Login page return");
+		}
+	}
 
 }

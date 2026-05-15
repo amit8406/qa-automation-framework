@@ -1,5 +1,4 @@
 package com.qa.base;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -10,6 +9,7 @@ public class BaseTest {
 	{
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		
 	}
 	
 	public void tearDown()
