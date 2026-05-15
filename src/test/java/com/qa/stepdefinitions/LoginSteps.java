@@ -1,6 +1,7 @@
 package com.qa.stepdefinitions;
 
 import io.cucumber.java.en.And;
+
 import com.qa.base.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,6 +9,8 @@ import io.cucumber.java.en.When;
 import com.qa.pages.*;
 
 public class LoginSteps extends BaseTest {
+	
+	
 	
 	LoginPageSaucelab loginPage;
 	@Given("user launch the browser")
@@ -32,6 +35,19 @@ public class LoginSteps extends BaseTest {
 	public void user_navigate_to_homepage() {
 	    System.out.println("Logged in successfully!");
 	}
+//	@Then("user accepts the alert displayed")
+//	public void user_accepts_the_alert_displayed()
+//	{
+//		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+//		wait.until(ExpectedConditions.alertIsPresent());
+//		Alert alert = driver.switchTo().alert();
+//		alert.accept();
+//		//wait.until(ExpectedConditions.presenceOfElementLocated(null))
+//		System.out.println("Alert is accepted which was displayed on screen");
+//	}
+	
+	
+	
 
 
 }
