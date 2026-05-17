@@ -30,7 +30,7 @@ public class LoginPageSaucelab {
 	}
 	public void loginBtnClick()
 	{
-		
+		//comment for btnLogin click
 		driver.findElement(btnLogin).click();
 	}
 	public void loginPageText()
