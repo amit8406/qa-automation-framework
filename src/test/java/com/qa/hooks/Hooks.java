@@ -40,7 +40,7 @@ public class Hooks extends BaseTest{
 	@After(order=2)
 	public void closeBrowser()
 	{
-		tearDown();
+		tearDown(); //for closing browser
 	}
 
 }
