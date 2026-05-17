@@ -20,7 +20,7 @@ public class Hooks extends BaseTest{
 	@Before(order = 1)
 	public void launchBrowser()
 	{
-		setup();
+		setup();//comment
 	}
 	
 	@After(order = 1)
