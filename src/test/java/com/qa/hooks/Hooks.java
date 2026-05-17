@@ -6,6 +6,7 @@ import com.qa.utilities.ExtentReportManager;
 import io.cucumber.java.Scenario;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 
 public class Hooks extends BaseTest{
@@ -34,13 +35,19 @@ public class Hooks extends BaseTest{
 		{
 			test.pass("Scenario is passed");
 		}
-		extent.flush();//comment
+		
 	}
 	
 	@After(order=2)
 	public void closeBrowser()
 	{
 		tearDown(); //for closing browser
+	}
+	
+	@AfterAll
+	public static void flushReport()
+	{
+		extent.flush();//comment
 	}
 
 }
