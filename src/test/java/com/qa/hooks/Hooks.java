@@ -34,7 +34,7 @@ public class Hooks extends BaseTest{
 		{
 			test.pass("Scenario is passed");
 		}
-		extent.flush();
+		extent.flush();//comment
 	}
 	
 	@After(order=2)
