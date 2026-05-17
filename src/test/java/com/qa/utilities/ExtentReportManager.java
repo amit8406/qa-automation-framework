@@ -15,7 +15,7 @@ public class ExtentReportManager {
 			spark.config().setReportName("Automation Report");
 			spark.config().setDocumentTitle("BDD Framework Report");
 			extent = new ExtentReports();
-			extent.attachReporter(spark);
+			extent.attachReporter(spark);//expected
 		}
 		return extent;
 		
